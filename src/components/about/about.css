@@ -1,0 +1,132 @@
+.about_container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.about_container .left{
+    width: 100%;
+    height: 100%;
+    flex: .5;
+    /* border: 2px solid red; */
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about_container .left .about_heading{
+    width: 300px;
+    position: relative;
+    left: 12%;
+    margin-top: 10px;
+}
+
+.about_container .left  .about_cards{
+    position: relative;
+    left: 12%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.about_container .left  .about_cards .cards_data{
+    display: flex;
+    width: 250px;
+    margin-top: 30px;
+    flex-direction: column;
+    min-height: auto;
+}
+
+.about_container .left  .about_cards .cards_data img{
+    width: 50px;
+    margin-bottom: 10px;
+}
+.about_container .left  .about_cards .cards_data h3{
+    margin-bottom: 10px;
+}
+
+.about_container .left  .about_cards .cards_data p{
+    font-size: 12px;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    letter-spacing: .6px;
+}
+
+
+/* about right part */
+.about_container .right{
+    flex: .5;
+    /* border: 2px solid green; */
+}
+
+.about_container .right .about_svg{
+    padding: 25px;
+    margin-top: 45px;
+    margin-left: 30px;
+}
+
+.about_container .right .about_svg img{
+    width: 400px;
+}
+
+
+
+@media (max-width:922px){
+    .about_container .right .about_svg{
+      padding: 25px 25px 25px 0;
+    }
+    .about_container .right .about_svg img {
+        width: 330px;
+    }
+}   
+
+
+@media (max-width:880px){
+    .about_container .right{
+        flex:0;
+    }
+    .about_container .right .about_svg{
+        display: none;
+      }
+      .about_container .left{
+        width:100%;
+        height: 100%;
+        /* border: 2px solid red; */
+        flex: 1;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .about_container .left .about_heading{
+        position: relative;
+        left: 0;
+        text-align: center;
+        margin: auto;
+    }
+    .about_container .left  .about_cards{
+        position: relative;
+        left: 0;
+        /* border: 2px solid red; */
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 320px;
+    }
+    .about_container .left  .about_cards .cards_data{
+        width: 350px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:580px){
+    .about_container .left  .about_cards .cards_data{
+        width: 260px;
+      
+    }
+}
